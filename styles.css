@@ -6,7 +6,7 @@
 
 #container::before,
 #container::after {
-  content: "Special Text";
+  content: "Before Element"; /* Update the content here */
   color: #f00;
   font-size: 20px;
   position: absolute;
@@ -18,5 +18,4 @@
 
 #container::after {
   right: -20px; /* Adjust this value to position the text right after the container */
-  content: "After Element"; /* Update the content here */
 }
