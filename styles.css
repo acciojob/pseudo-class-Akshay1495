@@ -1,21 +1,22 @@
-/*  your css code here. If applicable */
 #container {
   margin: 20px;
   position: relative;
+  display: inline-block; /* Display container as inline-block */
 }
 
 #container::before,
 #container::after {
-  content: "Before Element"; /* Update the content here */
   color: #f00;
   font-size: 20px;
-  position: absolute;
+  position: relative; /* Change position to relative */
 }
 
 #container::before {
-  left: -20px; /* Adjust this value to position the text right before the container */
+  content: "Before Element"; /* Update content to "Before Element" */
+  margin-right: 5px; /* Adjust margin to 5px */
 }
 
 #container::after {
-  right: -20px; /* Adjust this value to position the text right after the container */
+  content: "After Element"; /* Update content to "After Element" */
+  margin-left: 5px; /* Adjust margin to 5px */
 }
